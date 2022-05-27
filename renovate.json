@@ -50,12 +50,17 @@
       "groupName": "Esbuild packages"
     },
     {
-      "packageNames": ["typescript", "rxjs", "tslib"],
+      "matchPackageNames": ["typescript", "rxjs", "tslib"],
       "separateMinorPatch": true
     },
     {
-      "packageNames": ["typescript", "rxjs", "tslib"],
+      "matchPackageNames": ["typescript", "rxjs", "tslib"],
       "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": ["typescript"],
+      "matchPaths": ["examples/**"],
       "enabled": false
     },
     {
