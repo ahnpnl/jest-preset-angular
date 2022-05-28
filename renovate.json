@@ -15,8 +15,7 @@
     "@mdx-js/react",
     "react",
     "react-dom",
-    "@types/react",
-    "angular-in-memory-web-api"
+    "@types/react"
   ],
   "semanticCommits": "enabled",
   "commitMessagePrefix": "build(deps):",
@@ -50,12 +49,14 @@
       "groupName": "Esbuild packages"
     },
     {
-      "packageNames": ["typescript", "rxjs", "tslib"],
-      "separateMinorPatch": true
-    },
-    {
-      "packageNames": ["typescript", "rxjs", "tslib"],
-      "matchUpdateTypes": ["major"],
+      "matchPaths": ["examples/**"],
+      "matchPackageNames": [
+        "angular-in-memory-web-api",
+        "rxjs",
+        "tslib",
+        "typescript"
+      ],
+      "matchUpdateTypes": ["major", "minor"],
       "enabled": false
     },
     {
